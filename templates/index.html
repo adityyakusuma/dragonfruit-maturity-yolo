@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dregen</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font wesome stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+
+  </head>
+
+  <body>
+   
+    <div class="top_container">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+              <span> Dregen </span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <section class="hero_section">
+        <div class="hero-container container">
+          <div class="hero_detail-box">
+            <h1>
+              <b>Ayo Cari Tahu Tentang Dregen</b>
+            </h1>
+            <p>
+              Ayo, Jadilah Bagian Dari Revolusi Buah Naga Dengan Dregen! Rasakan
+              Kemudahan Dalam Mengklasifikasikan Kematangan Buah Naga Dengan
+              Mudah
+            </p>
+            
+            <!-- file image detection - file camera detection -->
+            <div class="hero_btn-continer" style="display: flex; justify-content: space-between;">
+              <a type="button" class="btn btn-lg" data-bs-target="#detectionModal" data-bs-toggle="modal" style= "background-color: #fdd31d; border-radius: 40px 5px; border-color:black; padding: 20px 20px; color: black; text-align: center; font-family:'Arial', bold, serif;">Detection</a>
+              <a href="{{ url_for('webcam') }}" type="button" class="btn btn-lg" style= "background-color: #fdd31d; border-radius: 40px 5px; border-color:black; padding: 20px 20px; color: black; text-align: center; font-family:'Arial', bold, serif; margin-left:-100px;">Webcam</a><br><br><br>
+            </div>        
+            <!-- file image detection - file camera detection -->
+
+          
+          </div>
+          <div class="hero_img-container">
+            <div>
+              <img src="{{ url_for('static', filename='images/Logo3.png') }}" alt="" class="img-fluid"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end header section -->
+
+    <div class="common_style">
+      <!-- about section -->
+      <section class="about_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="about_img-container">
+                <img src="{{ url_for('static', filename='images/dregen1.jpg') }}" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="about_detail-box container">
+                <h3 style="text-align: left;">About Dregen</h3>
+                <div style="text-align: justify">
+                  <p>
+                    Dregen adalah sebuah sistem kecerdasan buatan yang memiliki
+                    kemampuan unik untuk mendeteksi kematangan pada buah naga.
+                    Sistem ini menggunakan algoritma YOLOv5 (You Only Look Once
+                    version 5) yang telah terkenal dalam dunia visi komputer
+                    untuk mendeteksi objek dengan akurasi tinggi. Dengan bantuan
+                    teknologi ini, Dregen mampu mengidentifikasi dengan cepat
+                    tingkat kematangan buah naga yang sangat penting dalam
+                    industri pertanian. Proses deteksi kematangan buah naga oleh
+                    Dregen berlangsung dengan sangat efisien, memungkinkan
+                    petani untuk mengelola panen mereka secara lebih baik. Hasil
+                    dari sistem ini juga memberikan informasi yang akurat kepada
+                    petani, membantu mereka menentukan waktu yang tepat untuk
+                    panen, mengurangi pemborosan dan memaksimalkan hasil. Dengan
+                    YOLOv5 sebagai Algoritmanya, Dregen membuka peluang baru
+                    dalam mengoptimalkan proses pertanian dan memajukan
+                    teknologi di bidang pertanian modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end about section -->
+
+      <!-- admission section -->
+      <section class="admission_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="admission_detail-box container">
+                <h3>News</h3>
+                <p style="text-align: justify;">
+                  Buah naga semakin mendapatkan perhatian sebagai makanan sehat
+                  yang kaya manfaat bagi tubuh manusia. Kebaikan buah naga
+                  terungkap dalam sejumlah cara. Buah ini dikenal kaya akan
+                  serat, vitamin C, dan antioksidan yang membantu meningkatkan
+                  sistem kekebalan tubuh. Kandungan seratnya membantu menjaga
+                  pencernaan yang sehat dan mengurangi risiko gangguan
+                  pencernaan. Selain itu, buah naga juga dipuji karena memiliki
+                  sifat anti-inflamasi yang dapat membantu mengurangi peradangan
+                  dalam tubuh. Antioksidan dalam buah naga dapat membantu
+                  melindungi sel-sel tubuh dari kerusakan akibat radikal bebas,
+                  yang dikenal memicu berbagai penyakit. Kandungan nutrisi buah
+                  naga juga dapat mendukung kesehatan jantung dan mengontrol
+                  tekanan darah. Selain itu, buah ini rendah kalori,
+                  menjadikannya pilihan camilan sehat yang dapat membantu dalam
+                  manajemen berat badan. Kesehatan adalah harta, dan buah naga
+                  adalah salah satu makanan ajaib yang dapat membantu Anda
+                  mencapai gaya hidup sehat dan seimbang. Tambahkan buah naga ke
+                  dalam diet Anda dan nikmati manfaat kesehatan yang luar biasa
+                  yang ditawarkannya.
+                </p>
+                <div class=""></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="admission_img-container">
+                <img src="{{ url_for('static', filename='images/dregen2.jpg') }}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end determine section -->
+    </div>
+
+    <!-- client section -->
+    <section class="client_section layout_padding">
+      <h2 class="">Team</h2>
+      <div class="container">
+        <div class="team-member">
+          <img src="images/adit.jpg"/>
+          <h3>Aditya Kusuma</h3>
+          <p>Frontend Developer</p>
+        </div>
+    
+        <div class="team-member">
+          <img src="/images/lala.jpg"/>
+          <h3>Lala Atika Sari</h3>
+          <p>Problem Scoping</p>
+        </div>
+    
+        <div class="team-member">
+          <img src="images/dregen1.jpg"/>
+          <h3>Tri Wahyuning jati</h3>
+          <p>Data Acqusition</p>
+        </div>
+    
+        <div class="team-member">
+          <img src="link_to_image_4"/>
+          <h3>Naufal Ibrahim</h3>
+          <p>UI&UX Designer</p>
+        </div>
+    
+        <div class="team-member">
+          <img src="link_to_image_5"/>
+          <h3>Muhammad Raehan</h3>
+          <p>Backend Developer</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- end client section -->
+
+    <!-- contact section -->
+
+    <section class="contact_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center d-md-block">
+              <h2>Contact Us</h2>
+            </div>
+            <form action="">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                  <div class="mt-5">
+                    <input type="text" placeholder="Message" />
+                  </div>
+                  <div class="mt-5">
+                    <button type="submit">send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="contact_img-box">
+              <img src="{{ url_for('static', filename='images/students.jpg') }}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
+    <section class="info_section layout_padding-top">
+      <div class="info_logo-box">
+        <h2>Dregen Team</h2>
+      </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="social_container">
+          <div class="social-box">
+            <a href="">
+              <img src="{{ url_for('static', filename='images/fb.png') }}" alt="" />
+            </a>
+
+            <a href="">
+              <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="" />
+            </a>
+            <a href="">
+              <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="" />
+            </a>
+            <a href="">
+              <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% if show_modal %}
+    <div class="modal fade" id="detectionModal" tabindex="-1" role="dialog" aria-labelledby="detectionModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLongTitle" style="text-align: center;">Upload Gambar Dragon Fruit Sekarang !</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    
+                </div>
+                <div class="modal-body mb-3">
+                    <div class="container mt-3 text-center">
+                        Pastikan Anda mengunggah gambar yang terkait dengan
+                        <strong>Ripe Dragon Fruit dan Raw Dragon Fruit</strong>
+                    </div>
+                    <div class="row mt-5">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                          <form action=/detection-image  method="POST" enctype="multipart/form-data">
+                              <div class="form-group d-flex justify-content-center" style="margin-top: -30px;">
+                                  <label>
+                                      <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                                      <img class="image-upload" src="{{url_for('static', filename='images/image-upload.png')}}" width="60" height="60" alt="upload">
+                                  </label>
+                              </div>
+                              <div class="text-center mt-3 mb-3">
+                                  <input type="submit" class="btn btn-lg text-light text-dark" style="background-color: #fdd31d; border-radius: 25px 25px; border-color:black;" name="Submit" value="Submit" onclick="$('#loading-prediction-image').show();">
+                              </div>
+                              <div class="text-center">
+                                  <div id="loading-prediction-image" style="display:none;"><img src="{{ url_for('static', filename='images/loader.gif') }}" alt=""/></div>
+                              </div>  
+                          </form>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                          <form action=/detection-video  method="POST" enctype="multipart/form-data">
+                              <div class="form-group d-flex justify-content-center" style="margin-top: -30px;">
+                                  <label>
+                                      <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                                      <img class="image-upload" src="{{url_for('static', filename='images/play-button.png')}}" width="60" height="60" alt="upload">
+                                  </label>
+                              </div>
+                              <div class="text-center mt-3 mb-3">
+                                  <input type="submit" class="btn btn-lg text-dark" style="background-color: #fdd31d; border-radius: 25px 25px; border-color:black;" name="Submit" value="Submit" onclick="$('#loading-prediction-video').show();">
+                              </div>
+                              <div class="text-center">
+                                  <div id="loading-prediction-video" style="display:none;"><img src="{{ url_for('static', filename='images/loader.gif') }}" alt=""/></div>
+                              </div>  
+                          </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>Copyright &copy; 2023 The Entire Dregen Team</p>
+    </section>
+    <!-- footer section -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

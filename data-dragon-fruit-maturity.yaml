@@ -1,0 +1,6 @@
+names:
+- raw
+- ripe
+nc: 2
+train: dragon-fruit-maturity-detection-2/train/images
+val: dragon-fruit-maturity-detection-2/valid/images
